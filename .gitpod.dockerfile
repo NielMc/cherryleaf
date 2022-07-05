@@ -26,8 +26,3 @@ ENV PATH=$PYTHONUSERBASE/bin:$PATH
 
 # Setup Heroku CLI
 RUN curl https://cli-assets.heroku.com/install.sh | sh
-
-# Add aliases
-
-RUN echo 'alias python=python3' >> ~/.bashrc && \
-    echo 'alias pip=pip3' >> ~/.bashrc && \
